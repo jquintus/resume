@@ -41,6 +41,7 @@
       {
          "company":"Goldman Sachs",
          "position":"Software Engineer for GSAM",
+         "website":"http://assetmanagement.gs.com",
          "startDate":"2011-05-01",
          "endDate":"2014-01-31",
          "summary":" ", 
@@ -56,6 +57,7 @@
       {
          "company":"FactSet Research Systems Inc.",
          "position":"Senior Software Engineer",
+         "website":"http://factset.com",
          "startDate":"2008-07-07",
          "endDate":"2011-06-02",
          "summary":" ",
@@ -136,14 +138,55 @@
       }
    ],
    "skills":[
-      { "name":".NET/Visual Studio" },
-      { "name":"Xamarin Android" },
-      { "name":"Windows Azure" },
-      { "name":"Windows Services" },
-      { "name":"Debugging" },
-      { "name":"Software Design" },
-      { "name":"WinForms" },
-      { "name":"Mentorship" }
+      { "name":"Core Competencies", 
+        "keywords": [
+            ".NET/Visual Studio",
+            "Xamarin Android",
+            "Windows Azure",
+            "Windows Services",
+            "Debugging",
+            "Software Design",
+            "WinForms",
+            "Mentorship"
+          ]
+      },
+
+      { "name":"Languages",
+        "keywords": [
+            "C#",
+            "SQL",
+            "JSON",
+            "XML",
+            "XSLT",
+            "Perl"
+         ]
+      },
+
+      { "name":"Development Tools",
+        "keywords": [
+            "Visual Studio 2003 - 2010",
+            "SQL Management Studio 2008",
+            "Moq",
+            "Ninject 2.0",
+            "NUnit 2.4",
+            "Perforce",
+            "CVS",
+            "Source Safe",
+            "VI"
+         ]
+      },
+
+      { "name":"Technologies",
+        "keywords": [
+            ".NET 4.0",
+            "Web Services (WCF)",
+            "WPF",
+            "Windows Services",
+            "Regular Expressions",
+            "MS Message Queues",
+            "WMI"
+         ]
+      }
    ],
    "languages":[
       {
