@@ -17,6 +17,7 @@
       "profiles":[
          {
             "network":"Blog",
+            "username":"blog.MasterDevs.com",
             "url":"http://blog.MasterDevs.com"
          },
          {
@@ -32,17 +33,17 @@
          "position":"Founding Developer",
          "website":"http://yarly.co",
          "startDate":"2013-10-01",
-         "summary":"Words",
+         "summary":"Yarly is a young start up focused around scanning physical photos and storing them in the cloud",
          "highlights":[
             "Yarly highlihts"
          ]
       },
       {
          "company":"Goldman Sachs",
-         "position":"Software Engineer",
+         "position":"Software Engineer for GSAM",
          "startDate":"2011-05-01",
          "endDate":"2014-01-31",
-         "summary":"Words",
+         "summary":" ", 
          "highlights":[
             "As a leader in coding practices my advice was sought out formally and informally at all stages of development, from early design to code review. ",
             "I became a touch point for the entire software development lifecycle.",
@@ -57,7 +58,7 @@
          "position":"Senior Software Engineer",
          "startDate":"2008-07-07",
          "endDate":"2011-06-02",
-         "summary":"Words",
+         "summary":" ",
          "highlights":[
             "Developed Scheduler program, integrating GNU linear algebra libraries to create an optimized schedule for various tasks",
             "Lead software engineering efforts for a multi-tiered solution to record upcoming earnings calls utilizing WPF for the presentation layer, SQL Server for the data layer, and WCF hosted in a Windows Service",
@@ -73,7 +74,7 @@
          "position":"Senior Software Engineer",
          "startDate":"2006-07-17",
          "endDate":"2008-07-03",
-         "summary":"Words",
+         "summary":" ",
          "highlights":[
             "Managed, designed, and developed an application to configure, test, and determine the overall health of a distributed system in real time",
             "Maintained and added features to command and control software communicating with multiple end points through WMI and Microsoft Message Queues",
@@ -87,8 +88,8 @@
          "company":"Enpocket, Inc.",
          "position":"Field Engineer / Assistant IT Support Specialist",
          "startDate":"2005-05-01",
-         "endDate":"May 30, 2006",
-         "summary":"Words",
+         "endDate":"2006-05-30",
+         "summary":" ",
          "highlights":[
             "Created and deployed mobile web services",
             "Administrated systems and networks in a mostly Fedora Core 3 production environment",
