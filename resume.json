@@ -1,146 +1,153 @@
 {
-  "basics": {
-    "name": "Steven Edouard",
-    "label": "Developer Evangelist",
-    "picture": "https://scontent-b-sjc.xx.fbcdn.net/hphotos-prn1/t1.0-9/603953_10151522578258327_946466229_n.jpg ",
-    "email": "steven.edouard1@gmail.com",
-    "website": "http://stevenedouard.com",
-    "summary": "I am a Developer Evangelist for Microsoft. Every day I work to empower individuals to build awesome things. I eventually hope to pursue a role where I can have high impact on a product.",
-    "location": {
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
+   "basics":{
+      "name":"Josh Quintus",
+      "label":"Senior Software Engineer",
+      "picture":"https://pbs.twimg.com/profile_images/547094269631029249/VsLvEC_4.jpeg",
+      "email":"josh.quintus@gmail.com",
+      "phone":"(617) 688-7886",
+      "website":"https://github.com/jquintus",
+      "summary":"Josh is a software engineer with 8 years of experience delivering progressively challenging data-driven projects with various Microsoft technologies",
+      "location":{
+         "address":"60-72 70th Ave",
+         "postalCode":"11385",
+         "city":"Ridgewood",
+         "countryCode":"US",
+         "region":"New York"
+      },
+      "profiles":[
+         {
+            "network":"Blog",
+            "url":"http://blog.MasterDevs.com"
+         },
+         {
+            "network":"Twitter",
+            "username":"@jquintus",
+            "url":"https://twitter.com/jquintus"
+         }
+      ]
+   },
+   "work":[
       {
-        "network": "Resume Source",
-        "url": "http://github.com/sedouard/resume",
-        "username": "This Resume is built from this Github Repo"
+         "company":"Yarly, Co.",
+         "position":"Founding Developer",
+         "website":"http://yarly.co",
+         "startDate":"2013-10-01",
+         "summary":"Words",
+         "highlights":[
+            "Yarly highlihts"
+         ]
       },
       {
-        "network": "Twitter",
-        "username": "sedouard",
-        "url": "http://twitter.com/sedouard"
+         "company":"Goldman Sachs",
+         "position":"Software Engineer",
+         "startDate":"2011-05-01",
+         "endDate":"2014-01-31",
+         "summary":"Words",
+         "highlights":[
+            "As a leader in coding practices my advice was sought out formally and informally at all stages of development, from early design to code review. ",
+            "I became a touch point for the entire software development lifecycle.",
+            "Headed task forces to deep dive into impactful production bugs and produced temporary workarounds while investigating elusive root cause",
+            "Brought in to rescue floundering projects",
+            "Worked across teams to facilitate dialog and gather thoughts about what the future of the system means to different businesses so that we can clearly shape the architecture moving forward",
+            "Worked with multiple satellite tech teams to create a common trading system for business specific use cases and workflows"
+         ]
       },
       {
-        "network": "Github",
-        "username": "sedouard",
-        "url": "https://github.com/sedouard"
+         "company":"FactSet Research Systems Inc.",
+         "position":"Senior Software Engineer",
+         "startDate":"2008-07-07",
+         "endDate":"2011-06-02",
+         "summary":"Words",
+         "highlights":[
+            "Developed Scheduler program, integrating GNU linear algebra libraries to create an optimized schedule for various tasks",
+            "Lead software engineering efforts for a multi-tiered solution to record upcoming earnings calls utilizing WPF for the presentation layer, SQL Server for the data layer, and WCF hosted in a Windows Service",
+            "Maintained and supported existing infrastructure, ensuring that stakeholders would always be able to produce a professional product in a timely manner",
+            "Instituted a weekly code review which helped improve the quality of the code base as well as promote an atmosphere of sharing new and interesting coding practices",
+            "Streamlined data-verification process, removing thousands of false negatives so that our operations team could concentrate on the handful of actual problems",
+            "Gathered and interpreted requirements from stakeholders",
+            "Supported CallStreet's near-real time data feed by designing and implementing enhancements, fixing bugs, and responding to and helping clients when issues arise"
+         ]
+      },
+      {
+         "company":"Enterprise Air",
+         "position":"Senior Software Engineer",
+         "startDate":"2006-07-17",
+         "endDate":"2008-07-03",
+         "summary":"Words",
+         "highlights":[
+            "Managed, designed, and developed an application to configure, test, and determine the overall health of a distributed system in real time",
+            "Maintained and added features to command and control software communicating with multiple end points through WMI and Microsoft Message Queues",
+            "Designed and implemented a distributed software package which routes user data to subscribed ID management and physical access control systems",
+            "Communicated with the QA/Tech Support team to turn client requirements into solid feature requests for various projects and to help understand clients' needs",
+            "Supervised in creation of multiple levels of documentation across projects, including user guides, developer documentation, and architecture overviews",
+            "Created intuitive UI layouts with a focus on ease of deployment and maintenance by clients"
+         ]
+      },
+      {
+         "company":"Enpocket, Inc.",
+         "position":"Field Engineer / Assistant IT Support Specialist",
+         "startDate":"2005-05-01",
+         "endDate":"May 30, 2006",
+         "summary":"Words",
+         "highlights":[
+            "Created and deployed mobile web services",
+            "Administrated systems and networks in a mostly Fedora Core 3 production environment",
+            "Installed and maintained an in-office VoIP Asterisk PBX",
+            "Laid down telephone and CATV office cabling"
+         ]
       }
-    ]
-  },
-  "work": [
-    {
-      "company": "Microsoft",
-      "position": "Developer Evangelist",
-      "website": "http://microsoft.com",
-      "startDate": "2014-03-04",
-      "summary": "Responsible for increasing adoption of Microsoft developer platforms.",
-      "highlights": [
-        "Created many technical blog posts focusing on cloud and web development with Microsoft tech",
-        "Successfully won Techcrunch Disrupt Hardware Sponsor Award",
-        "Delivered dozens of original technical presentations from high school to pro developers",
-        "Went from 12 to >100 average unique daily website views",
-        "Authored 2 articles on MSDN magazine"
-      ]
-    },
-    {
-      "company": "Microsoft",
-      "position": "Software Development Engineer in Test, Common Language Runtime",
-      "website": "http://www.microsoft.com/net",
-      "startDate": "2012-01-22",
-      "endDate": "2014-03-04",
-      "summary": "Responsible for integration, dynamic testing and diagnostics of the Common Language Runtime.",
-      "highlights": [
-        "Created innovative test validations and infrastructure for Microsoft .NET Runtime debugger and diagnostics APIs consumed by Visual Studio ",
-        "Extended Visual Studio Test Explorer it to run complex end-to-end scenario tests",
-        "Assisted in customer on-boarding to .NET 4.5.1 by syncing with feature teams to diagnose issues",
-        "Drove product test results and collaborated with various feature teams across .NET to drive validation pass rates"
-      ]
-    },
-    {
-      "company": "Lockheed Martin Mission Systems",
-      "position": "Software Engineer Intern (4 summers)",
-      "website": "http://www.lockheedmartin.com",
-      "startDate": "2008-01-22",
-      "endDate": "2011-08-01",
-      "summary": "Obtained critical experience during college on software development for mission-critical scenarios.",
-      "highlights": [
-        "Designed system requirements for autonomous underwater vehicle ",
-        "Designed and implemented features on common software for use with multiple vehicles ",
-        "Performed software cost estimates",
-        "Implemented software features for sonar system displays"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "TEALS",
-      "position": "Teacher",
-      "website": "http://tealsk12.org",
-      "startDate": "2012-07-01",
-      "endDate": "2013-05-05",
-      "summary": "High school Teacher for an inner-city computer science class.",
-      "highlights": [
-        "Featured in the International New York Times"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Florida",
-      "area": "Computer Engineering",
-      "studyType": "Bachelor",
-      "startDate": "2007-08-01",
-      "endDate": "2011-12-01",
-      "gpa": "3.47"
-    }
-  ],
-  "awards": [
-    {
-      "name": "Visual Studio Team Excellence Light House Award",
-      "date": "2013-04-01",
-      "awarder": "Visual Studio Team - Microsoft",
-      "summary": "Given to member of the Visual Studio team who goes above and beyond their role."
-    }
-  ],
-  "skills": [
-    {
-      "name": "C# and .NET",
-      "level": "Master",
-      "keywords": [
-        "C#"
-      ]
-    },
-    {
-      "name": "Node.js",
-      "level": "Intermediate",
-      "keywords": [
-        "javascript",
-        "express"
-      ]
-    },
-    {
-      "name": "Cloud Services",
-      "level": "Master",
-      "keywords": [
-        "PaaS",
-        "Storage",
-        "APIs"
-      ]
-    },
-    {
-      "name": "iOS Application Development",
-      "level": "Intermediate",
-      "keywords": [
-        "Objective-C"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ]
+   ],
+   "education":[
+      {
+         "institution":"Develomentor",
+         "studyType":"Training:  Exploring .NET 4.0",
+         "startDate":"2010-07-21",
+         "endDate":"2010-07-25",
+         "courses":[
+            "LINQ",
+            "WPF",
+            "WCF",
+            "Threading",
+            "Concurrency",
+            "Parallel Programming",
+            "Silverlight"
+         ]
+      },
+      {
+         "institution": "Northeastern University",
+         "area": "Computer Science",
+         "studyType": "Bachelor of Science",
+         "startDate": "2001-09-21",
+         "endDate": "2006-05-20",
+         "courses": [
+           "Cryptography",
+           "Compilers",
+           "Programming Languages",
+           "Computer Organization and Design",
+           "Topics in OS",
+           "Software Design",
+           "Computer Networking",
+           "Macroeconomics",
+           "Calculus",
+           "Differential Equations in Linear Algebra",
+           "Number Theory"
+         ]
+      }
+   ],
+   "skills":[
+      { "name":".NET/Visual Studio" },
+      { "name":"Xamarin Android" },
+      { "name":"Windows Azure" },
+      { "name":"Windows Services" },
+      { "name":"Debugging" },
+      { "name":"Software Design" },
+      { "name":"WinForms" },
+      { "name":"Mentorship" }
+   ],
+   "languages":[
+      {
+         "language":"English",
+         "fluency":"Native speaker"
+      }
+   ]
 }
