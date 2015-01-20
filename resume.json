@@ -5,7 +5,6 @@
       "picture":"https://pbs.twimg.com/profile_images/547094269631029249/VsLvEC_4.jpeg",
       "email":"josh.quintus@gmail.com",
       "phone":"(617) 688-7886",
-      "website":"https://github.com/jquintus",
       "summary":"Josh is a software engineer with 8 years of experience delivering progressively challenging data-driven projects with various Microsoft technologies",
       "location":{
          "address":"60-72 70th Ave",
@@ -19,6 +18,11 @@
             "network":"Blog",
             "username":"blog.MasterDevs.com",
             "url":"http://blog.MasterDevs.com"
+         },
+         {
+            "network":"GitHub",
+            "username":"jquintus",
+            "url":"https://github.com/jquintus"
          },
          {
             "network":"Twitter",
