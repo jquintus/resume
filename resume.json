@@ -107,7 +107,8 @@
   "education":[  
     {  
       "institution":"Develomentor",
-      "studyType":"Training:  Exploring .NET 4.0",
+      "area":"Training:  Exploring .NET 4.0",
+      "studyType": "Topics",
       "endDate":"2010-07-25",
       "courses":[  
         "LINQ",
@@ -121,8 +122,8 @@
     },
     {  
       "institution":"Northeastern University",
-      "area":"Computer Science",
-      "studyType":"Bachelor of Science",
+      "area":"Bachelor of Science in Computer Science, Minor in Mathematics",
+      "studyType":"Courses",
       "startDate":"2001-09-21",
       "endDate":"2006-05-20",
       "courses":[  
@@ -153,6 +154,7 @@
     {  
       "organization":"Wall Master",
       "website":"http://wallmaster.codeplex.com/",
+      "position": "Manages and sets desktop wallpapers",
       "endDate":"2008-08-01",
       "highlights":[  
         "Wrote a WPF tray application to independently set wallpapers when using multiple monitors",
@@ -170,9 +172,7 @@
         "Windows Azure",
         "Windows Services",
         "Debugging",
-        "Software Design",
-        "WinForms",
-        "Mentorship"
+        "Software Design"
       ]
     },
     {  
@@ -189,7 +189,7 @@
     {  
       "name":"Development Tools",
       "keywords":[  
-        "Visual Studio 2003 - 2010",
+        "Visual Studio 2003 - 2013",
         "SQL Management Studio 2008",
         "Moq",
         "Ninject 2.0",
@@ -220,4 +220,3 @@
     }
   ]
 }
-
