@@ -11,7 +11,6 @@
 	"test": "node ./node_modules/resume-cli/index.js export index -f html --theme class"
   },
   "dependencies": {
-    "resume-cli": "^0.3.10",
-  "handlebars": "^2.0.0-alpha.4"
+    "resume-cli": "^0.3.10"
   }
 }
