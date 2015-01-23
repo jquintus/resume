@@ -1,3 +1,4 @@
+dfs
 {  
   "basics":{  
     "name":"Josh Quintus",
@@ -23,6 +24,11 @@
         "network":"GitHub",
         "username":"jquintus",
         "url":"https://github.com/jquintus"
+      },
+      {  
+        "network":"StackOverflow",
+        "username":"Josh",
+        "url":"http://stackoverflow.com/users/1480854/josh"
       },
       {  
         "network":"Twitter",
@@ -219,4 +225,3 @@
     }
   ]
 }
-
