@@ -148,11 +148,11 @@
   "volunteer":[  
     {  
       "organization":"Xamarin Forms Shopping Cart",
-      "website":"https://github.com/jquintus/ShoppingCart",
+      "website":"https://github.com/jquintus/ShoppingCartXF",
       "position": "Sample code and detailed articles detailing pitfalls of Xamarin Forms",
       "endDate":"2014-10-01",
       "highlights":[  
-        "Featured in the http://XamarinWeekly.com newsletter",
+        "Featured in the <a href='http://XamarinWeekly.com'>Xamarin Weekly Newsletter</a>",
         "Provids insight and best practices for an emerging technology",
         "Discusses options for consistently styling cross-platform applications",
         "Highlights bugs and the necessary workarounds when using Xamarin Forms"
