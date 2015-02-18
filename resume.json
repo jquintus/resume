@@ -150,6 +150,17 @@
   ],
   "volunteer":[
     {
+      "organization":"VsOpenIn",
+      "website":"https://github.com/jquintus/VsOpenIn/",
+      "position":"Visual Studio extension to open the current document in an external editor",
+      "endDate":"2015-02-17",
+      "highlights":[
+        "Released to the Visual Studio Extension Gallery",
+        "Open with Vim by default, but can be configured to use any editor"
+
+      ]
+    },
+    {
       "organization":"Xamarin Forms Shopping Cart",
       "website":"https://github.com/jquintus/ShoppingCartXF",
       "position": "Sample code and detailed articles detailing pitfalls of Xamarin Forms",
