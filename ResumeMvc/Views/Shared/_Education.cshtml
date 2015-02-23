@@ -1,57 +1,50 @@
 ﻿@model IEnumerable<ResumeMvc.Models.Education>
-
+@if (Model != null && Model.Any())
+{
     <section id="education">
         <h2 class="underlined">Education and Training</h2>
-        <div class="item">
-            <section id="Develomentor">
-                <div class="study_name">
-                    <h3>
-                        Develomentor
-                        <div class="study_date">
-                            <span class="endDate">
-                                July 2010
-                            </span>
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                @if (!string.IsNullOrWhiteSpace(item.Institution))
+                {
+                    <section id="@item.Institution">
+                        <div class="study_name">
+                            <h3>
+                                @item.Institution
+                                <div class="study_date">
+                                    @Html.Partial("_DateSpan", (ResumeMvc.Models.IHasDateSpan)item)
+                                </div>
+                            </h3>
                         </div>
-                    </h3>
-                </div>
-            </section>
+                    </section>
+                }
 
-            <div class="study_area">
-                Training:  Exploring .NET 4.0
+                @if (!string.IsNullOrWhiteSpace(item.Area))
+                {
+
+                    <div class="study_area">
+                        @item.Area
+                    </div>
+                }
+
+                @if (item.Courses != null && item.Courses.Any())
+                {
+                    <p>
+                        @if (!string.IsNullOrWhiteSpace(item.StudyType))
+                        {
+                            <strong> @item.StudyType: </strong>
+                        }
+                        else
+                        {
+                            <strong> Courses: </strong>
+                        }
+
+                        @(string.Join(", ", item.Courses))
+                    </p>
+                }
             </div>
-
-            <p>
-                <strong> Topics: </strong>
-                LINQ, WPF, WCF, Threading, Concurrency, Parallel Programming, Silverlight
-            </p>
-
-
-        </div>
-        <div class="item">
-            <section id="Northeastern University">
-                <div class="study_name">
-                    <h3>
-                        Northeastern University
-                        <div class="study_date">
-                            <span class="startDate">
-                                September 2001 -
-                            </span>
-                            <span class="endDate">
-                                May 2006
-                            </span>
-                        </div>
-                    </h3>
-                </div>
-            </section>
-
-            <div class="study_area">
-                Bachelor of Science in Computer Science, Minor in Mathematics
-            </div>
-
-            <p>
-                <strong> Courses: </strong>
-                Cryptography, Compilers, Programming Languages, Computer Organization and Design, Topics in OS, Software Design, Computer Networking, Macroeconomics, Calculus, Differential Equations in Linear Algebra, Number Theory
-            </p>
-
-        </div>
+        }
     </section>
+
+}
