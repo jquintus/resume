@@ -1,26 +1,29 @@
 ﻿@model IEnumerable<ResumeMvc.Models.Interest>
 
-    Interests
-
-    @*{{#if resume.interests.length}}
-        <section id="interests">
-            <h2 class="underlined">Interests</h2>
-            {{#each resume.interests}}
+@if (Model != null && Model.Any())
+{
+    <section id="interests">
+        <h2 class="underlined">Interests</h2>
+        @foreach (var item in Model)
+        {
             <div class="item">
-                {{#if name}}
-                <div class="name">
-                    <strong> {{name}} </strong>
-                </div>
-                {{/if}}
-                {{#if keywords.length}}
-                <ul class="keywords">
-                    {{#each keywords}}
-                    <li>{{{.}}}</li>
-                    {{/each}}
-                </ul>
-                {{/if}}
-            </div>
-            {{/each}}
-        </section>
-        {{/if}}*@
+                @if (!string.IsNullOrWhiteSpace(item.Name))
+                {
+                    <div class="name">
+                        <strong> @item.Name </strong>
+                    </div>
+                }
 
+                @if (item.Keywords != null && item.Keywords.Any())
+                {
+                    <ul class="keywords">
+                        @foreach (var keyword in item.Keywords)
+                        {
+                            <li>@keyword</li>
+                        }
+                    </ul>
+                }
+            </div>
+        }
+    </section>
+}

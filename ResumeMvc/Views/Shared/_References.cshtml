@@ -1,23 +1,27 @@
 ﻿@model IEnumerable<ResumeMvc.Models.ResumeReference>
+@if (Model != null && Model.Any())
+{
+    <section id="references">
+        <h2 class="underlined">References</h2>
+        @foreach (var item in Model)
+        {
 
-    References Template
-
-    @*{{#if resume.references.length}}
-        <section id="references">
-            <h2 class="underlined">References</h2>
-            {{#each resume.references}}
             <div class="item">
-                {{#if reference}}
-                <blockquote class="reference">
-                    {{reference}}
-                </blockquote>
-                {{/if}}
-                {{#if name}}
-                <div class="name">
-                    â€” {{name}}
-                </div>
-                {{/if}}
+
+                @if (string.IsNullOrWhiteSpace(item.Reference))
+                {
+                    <blockquote class="reference">
+                        @item.Reference
+                    </blockquote>
+                }
+
+                @if (string.IsNullOrWhiteSpace(item.Name))
+                {
+                    <div class="name">
+                        @item.Name
+                    </div>
+                }
             </div>
-            {{/each}}
-        </section>
-        {{/if}}*@
+        }
+    </section>
+}
