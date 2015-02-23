@@ -1,30 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Newtonsoft.Json;
+using ResumeMvc.Models;
+using System.IO;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace ResumeMvc.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View();
+            ViewBag.Xyz = "hello";
+
+            var model = await ReadResume();
+            //var model = new Resume();
+            //var model = new List<string> { "one", "two" };
+
+            return View(model);
         }
 
-        public ActionResult About()
+        private async Task<Resume> ReadResume()
         {
-            ViewBag.Message = "Your application description page.";
+            var resumePath = Server.MapPath("~/App_Data/resume.json");
 
-            return View();
-        }
+            using (var reader = new StreamReader(resumePath))
+            {
+                var resumeString = await reader.ReadToEndAsync();
+                var resume = JsonConvert.DeserializeObject<Resume>(resumeString);
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+                return resume;
+            }
         }
     }
 }
