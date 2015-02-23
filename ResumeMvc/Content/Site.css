@@ -14,35 +14,36 @@
 }
 
 em {
-  color: #444;
+    color: #444;
 }
 
 p {
-  line-height: 1.4;
+    line-height: 1.4;
 }
 
 a {
-  color: #31A6D6;
+    color: #31A6D6;
 }
 
-a:visited {
-  color: #3061A5;
-}
+    a:visited {
+        color: #3061A5;
+    }
 
-a:hover {
-  color: #3061A5;
-}
+    a:hover {
+        color: #3061A5;
+    }
 
 ul {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 section {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 blockquote {
-  margin: 0;
-  margin-bottom: 1em;
+    margin: 0;
+    margin-bottom: 1em;
 }
 
 /* End general, overall styling */
@@ -50,70 +51,72 @@ blockquote {
 /* Header name styling */
 
 #header {
-  background: #009DDC;
-  height: 150px;
-  padding: 15px;
-}
-#header-content {
-  max-width: 700px;
-  margin: 0 auto;
-}
-.header-title{ 
-  margin: 0px; 
-  padding: 0px; 
-  float: right; 
-}
-.avatar{ 
-  float: left; 
-}
-
-
-@media print{
-  #header {
     background: #009DDC;
-    height: 50px;
-  }
+    height: 150px;
+    padding: 15px;
+}
 
-  .photo{
-    display: none;
+#header-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header-title {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.avatar {
     float: left;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
+}
+
+@media print {
+    #header {
+        background: #009DDC;
+        height: 50px;
+    }
+
+    .photo {
+        display: none;
+        float: left;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
 }
 
 #header-title {
-  color: #FFFFFF;
-  margin: 0 auto;
+    color: #FFFFFF;
+    margin: 0 auto;
 }
 
 #header-subtitle {
-  color: #F3F3F3;
-  font-size: 1em;
-  max-width: 700px;
-  margin: 0 auto;
+    color: #F3F3F3;
+    font-size: 1em;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-header .name{
-  float: right;
-  padding-top: 70px;
+header .name {
+    float: right;
+    padding-top: 70px;
 }
-.photo{
-  float: left;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
+
+.photo {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /* End header name styling */
 
 /* Set width of main body of CV */
 .container {
-  max-width: 700px;
-  padding: 0 50px;
-  margin: 0 auto;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 /* End */
@@ -125,32 +128,33 @@ header .name{
 .website,
 .email,
 .phone {
-  margin-bottom: 10px;
-  float: left;
-  width: 50%;
+    margin-bottom: 10px;
+    float: left;
+    width: 50%;
 }
 
 .summary {
-  padding-top: 5px;
-  clear: both;
+    padding-top: 5px;
+    clear: both;
 }
 
 #profiles {
-  overflow: hidden;
-  margin: 0px;
+    overflow: hidden;
+    margin: 0;
 }
-@media print{
-  #profiles {
-    display: none;
-  }
+
+@media print {
+    #profiles {
+        display: none;
+    }
 }
 
 #profiles .item {
-  float: left;
-  text-align:center;
-  width: 25%;
-  margin:5px 0px;
-  min-width:150px;
+    float: left;
+    text-align: center;
+    width: 25%;
+    margin: 5px 0;
+    min-width: 150px;
 }
 
 /* End 'Basics' Styling */
@@ -159,42 +163,42 @@ header .name{
 
 .institution,
 .qualification {
-  float: left;
+    float: left;
 }
 
 .work_date,
 .study_date,
-.work_website{
-  float: right;
+.work_website {
+    float: right;
 }
 
 .work_position,
-.study_area{
-  font-style: italic;
-  color: #444;
+.study_area {
+    font-style: italic;
+    color: #444;
 }
 
 .courses {
-  clear: both;
+    clear: both;
 }
 
 .dissertation {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
-.underlined{
-  border-bottom: 1px #E2E2E2 solid;
+.underlined {
+    border-bottom: 1px #E2E2E2 solid;
 }
 
 .skill {
-  margin:10px 5%;
-  float:left;
-  width:40%;
-  min-width:100px;
+    margin: 10px 5%;
+    float: left;
+    width: 40%;
+    min-width: 100px;
 }
 
 .item {
-  margin: 25px 0;
+    margin: 25px 0;
 }
 
 /* End work and volunteering */
@@ -202,21 +206,24 @@ header .name{
 /* Skills, languages, interests and references styling */
 
 #skills {
-  overflow: hidden;
+    overflow: hidden;
 }
 
-#languages .item,
-#interests .item,
-#skills .item {
-  float: left;
-  width: 50%;
-}
+    #languages .item,
+    #interests .item,
+    #skills .item {
+        float: left;
+        width: 50%;
+    }
 
 #references,
 #interests {
-  clear: both;
+    clear: both;
 }
 
-h3{font-size:1.17em;margin:0em 0}
+h3 {
+    font-size: 1.17em;
+    margin: 0 0;
+}
 
 /* End styling */
