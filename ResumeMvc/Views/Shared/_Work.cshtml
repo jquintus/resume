@@ -1,177 +1,64 @@
 ﻿@model IEnumerable<ResumeMvc.Models.Work>
-    @{var Work = Model;}
+@{var Work = Model;}
 
-
+@if (Work != null && Work.Any())
+{
     <section id="work">
         <h2 class="underlined">Work</h2>
-        <div class="item">
-            <section id="Yarly, Co.">
-                <h3 class="work_name">
-                    Yarly, Co.
-                    <div class="work_date">
-                        <span class="startDate">
-                            June 2013 -
-                        </span>
-                        <span class="endDate">
-                            Present
-                        </span>
+        @foreach (var item in Work)
+        {
+            <div class="item">
+                @if (!string.IsNullOrWhiteSpace(item.Company))
+                {
+                    <section id="@item.Company">
+                        <h3 class="work_name">
+                            @item.Company
+                            <div class="work_date">
+                                @if (item.StartDate.HasValue)
+                                {
+
+                                    <span class="startDate">
+                                        @item.StartDate.Value.ToString("Y") -
+                                    </span>
+                                }
+                                @if (item.EndDate.HasValue)
+                                {
+                                    <span class="endDate">
+                                        @item.EndDate.Value.ToString("Y")
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="endDate">
+                                        Present
+                                    </span>
+                                }
+                            </div>
+                        </h3>
+                    </section>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Website))
+                {
+                    <div class="work_website">
+                        <a href="@item.Website">@item.Website</a>
                     </div>
-                </h3>
-            </section>
-
-            <div class="work_website">
-                <a href="http://yarly.co">http://yarly.co</a>
-            </div>
-
-            <div class="work_position">
-                Founding Developer
-            </div>
-
-            <div class="summary">
-                <p>As one of three developers, I have a hand in every technical decision made for this young startup</p>
-            </div>
-
-            <ul class="highlights">
-                <li>Created and maintain Yarly's 5 star <a href='https://play.google.com/store/apps/details?id=co.yarly.droid'>Android app </a> in C# sharing 80% of code with iOS and WinPhone versions</li>
-                <li>Set up all DevOps aspects of the technology stack including Git repository on TFS, CI builds, Azure hosting, continuous and scheduled jobs, and reporting</li>
-                <li>Led the effort to migrate all our data from MongoDB to Sql Azure</li>
-            </ul>
-        </div>
-        <div class="item">
-            <section id="Goldman Sachs">
-                <h3 class="work_name">
-                    Goldman Sachs
-                    <div class="work_date">
-                        <span class="startDate">
-                            May 2011 -
-                        </span>
-                        <span class="endDate">
-                            January 2014
-                        </span>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Position))
+                {
+                    <div class="work_position">
+                        @item.Position
                     </div>
-                </h3>
-            </section>
-
-            <div class="work_website">
-                <a href="http://assetmanagement.gs.com">http://assetmanagement.gs.com</a>
-            </div>
-
-            <div class="work_position">
-                Software Engineer for GSAM
-            </div>
-
-            <div class="summary">
-                <p> </p>
-            </div>
-
-            <ul class="highlights">
-                <li>As a leader in coding practices my advice was sought out formally and informally at all stages of development, from early design to code review. </li>
-                <li>I became a touch point for the entire software development lifecycle.</li>
-                <li>Headed task forces to deep dive into impactful production bugs and produced temporary workarounds while investigating elusive root cause</li>
-                <li>Brought in to rescue floundering projects</li>
-                <li>Worked across teams to facilitate dialog and gather thoughts about what the future of the system means to different businesses so that we can clearly shape the architecture moving forward</li>
-                <li>Worked with multiple satellite tech teams to create a common trading system for business specific use cases and workflows</li>
-            </ul>
-        </div>
-        <div class="item">
-            <section id="FactSet Research Systems Inc.">
-                <h3 class="work_name">
-                    FactSet Research Systems Inc.
-                    <div class="work_date">
-                        <span class="startDate">
-                            July 2008 -
-                        </span>
-                        <span class="endDate">
-                            June 2011
-                        </span>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Summary))
+                {
+                    <div class="summary">
+                        <p>@item.Summary</p>
                     </div>
-                </h3>
-            </section>
-
-            <div class="work_website">
-                <a href="http://factset.com">http://factset.com</a>
+                }
+                @if (item.Highlights != null)
+                {@Html.Partial("_Highlights", item.Highlights);
+                }
             </div>
-
-            <div class="work_position">
-                Senior Software Engineer
-            </div>
-
-            <div class="summary">
-                <p> </p>
-            </div>
-
-            <ul class="highlights">
-                <li>Developed Scheduler program, integrating GNU linear algebra libraries to create an optimized schedule for various tasks</li>
-                <li>Lead software engineering efforts for a multi-tiered solution to record upcoming earnings calls utilizing WPF for the presentation layer, SQL Server for the data layer, and WCF hosted in a Windows Service</li>
-                <li>Maintained and supported existing infrastructure, ensuring that stakeholders would always be able to produce a professional product in a timely manner</li>
-                <li>Instituted a weekly code review which helped improve the quality of the code base as well as promote an atmosphere of sharing new and interesting coding practices</li>
-                <li>Streamlined data-verification process, removing thousands of false negatives so that our operations team could concentrate on the handful of actual problems</li>
-                <li>Gathered and interpreted requirements from stakeholders</li>
-                <li>Supported CallStreet's near-real time data feed by designing and implementing enhancements, fixing bugs, and responding to and helping clients when issues arise</li>
-            </ul>
-        </div>
-        <div class="item">
-            <section id="Enterprise Air">
-                <h3 class="work_name">
-                    Enterprise Air
-                    <div class="work_date">
-                        <span class="startDate">
-                            July 2006 -
-                        </span>
-                        <span class="endDate">
-                            July 2008
-                        </span>
-                    </div>
-                </h3>
-            </section>
-
-
-            <div class="work_position">
-                Senior Software Engineer
-            </div>
-
-            <div class="summary">
-                <p> </p>
-            </div>
-
-            <ul class="highlights">
-                <li>Managed, designed, and developed an application to configure, test, and determine the overall health of a distributed system in real time</li>
-                <li>Maintained and added features to command and control software communicating with multiple end points through WMI and Microsoft Message Queues</li>
-                <li>Designed and implemented a distributed software package which routes user data to subscribed ID management and physical access control systems</li>
-                <li>Communicated with the QA/Tech Support team to turn client requirements into solid feature requests for various projects and to help understand clients' needs</li>
-                <li>Supervised in creation of multiple levels of documentation across projects, including user guides, developer documentation, and architecture overviews</li>
-                <li>Created intuitive UI layouts with a focus on ease of deployment and maintenance by clients</li>
-            </ul>
-        </div>
-        <div class="item">
-            <section id="Enpocket, Inc.">
-                <h3 class="work_name">
-                    Enpocket, Inc.
-                    <div class="work_date">
-                        <span class="startDate">
-                            May 2005 -
-                        </span>
-                        <span class="endDate">
-                            May 2006
-                        </span>
-                    </div>
-                </h3>
-            </section>
-
-
-            <div class="work_position">
-                Field Engineer / Assistant IT Support Specialist
-            </div>
-
-            <div class="summary">
-                <p> </p>
-            </div>
-
-            <ul class="highlights">
-                <li>Created and deployed mobile web services</li>
-                <li>Administrated systems and networks in a mostly Fedora Core 3 production environment</li>
-                <li>Installed and maintained an in-office VoIP Asterisk PBX</li>
-                <li>Laid down telephone and CATV office cabling</li>
-            </ul>
-        </div>
+        }
     </section>
+}

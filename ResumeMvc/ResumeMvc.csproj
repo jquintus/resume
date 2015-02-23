@@ -252,6 +252,7 @@
     <Content Include="Views\Shared\_Interests.cshtml" />
     <Content Include="Views\Shared\_References.cshtml" />
     <Content Include="Views\Shared\_Education.cshtml" />
+    <Content Include="Views\Shared\_Highlights.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
