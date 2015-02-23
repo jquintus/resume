@@ -1,11 +1,9 @@
 ﻿@model IEnumerable<ResumeMvc.Models.Work>
-@{var Work = Model;}
-
-@if (Work != null && Work.Any())
+@if (Model != null && Model.Any())
 {
     <section id="work">
         <h2 class="underlined">Work</h2>
-        @foreach (var item in Work)
+        @foreach (var item in Model)
         {
             <div class="item">
                 @if (!string.IsNullOrWhiteSpace(item.Company))
@@ -38,7 +36,8 @@
                     </div>
                 }
                 @if (item.Highlights != null)
-                {@Html.Partial("_Highlights", item.Highlights);
+                {
+                    @Html.Partial("_Highlights", item.Highlights);
                 }
             </div>
         }

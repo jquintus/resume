@@ -1,110 +1,46 @@
 ﻿@model IEnumerable<ResumeMvc.Models.Volunteer>
-
-
+@if (Model != null && Model.Any())
+{
     <section id="projects">
         <h2 class="underlined">Projects</h2>
-        <div class="item">
-            <section id="VsOpenIn">
-                <h3 class="company">
-                    VsOpenIn
-                    <div class="work_date">
-                        <span class="endDate">
-                            February 2015
-                        </span>
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                @if (!string.IsNullOrWhiteSpace(item.Organization))
+                {
+                    <section id="@item.Organization">
+                        <h3 class="work_name">
+                            @item.Organization
+                            <div class="work_date">
+                                @Html.Partial("_DateSpan", (ResumeMvc.Models.IHasDateSpan)item)
+                            </div>
+                        </h3>
+                    </section>
+                }
+
+                @if (!string.IsNullOrWhiteSpace(item.Website))
+                {
+                    <div class="work_website">
+                        <a href="@item.Website">@item.Website</a>
                     </div>
-                </h3>
-            </section>
-
-            <div class="work_website">
-                <a href="https://github.com/jquintus/VsOpenIn/">https://github.com/jquintus/VsOpenIn/</a>
-            </div>
-
-            <div class="work_position">
-                Visual Studio extension to open the current document in an external editor
-            </div>
-
-
-            <ul class="highlights">
-                <li>Released to the Visual Studio Extension Gallery</li>
-                <li>Open with Vim by default, but can be configured to use any editor</li>
-            </ul>
-        </div>
-        <div class="item">
-            <section id="Xamarin Forms Shopping Cart">
-                <h3 class="company">
-                    Xamarin Forms Shopping Cart
-                    <div class="work_date">
-                        <span class="endDate">
-                            October 2014
-                        </span>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Position))
+                {
+                    <div class="work_position">
+                        @item.Position
                     </div>
-                </h3>
-            </section>
-
-            <div class="work_website">
-                <a href="https://github.com/jquintus/ShoppingCartXF">https://github.com/jquintus/ShoppingCartXF</a>
-            </div>
-
-            <div class="work_position">
-                Sample code and detailed articles detailing pitfalls of Xamarin Forms
-            </div>
-
-
-            <ul class="highlights">
-                <li>Featured in the <a href='http://XamarinWeekly.com'>Xamarin Weekly Newsletter</a></li>
-                <li>Provids insight and best practices for an emerging technology</li>
-                <li>Discusses options for consistently styling cross-platform applications</li>
-                <li>Highlights bugs and the necessary workarounds when using Xamarin Forms</li>
-            </ul>
-        </div>
-        <div class="item">
-            <section id="Message Master">
-                <h3 class="company">
-                    Message Master
-                    <div class="work_date">
-                        <span class="endDate">
-                            December 2009
-                        </span>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Summary))
+                {
+                    <div class="summary">
+                        <p>@item.Summary</p>
                     </div>
-                </h3>
-            </section>
-
-            <div class="work_website">
-                <a href="http://messagemaster.codeplex.com/">http://messagemaster.codeplex.com/</a>
+                }
+                @if (item.Highlights != null)
+                {
+                    @Html.Partial("_Highlights", item.Highlights);
+                }
             </div>
-
-
-
-            <ul class="highlights">
-                <li>Created an Android application to send canned text messages</li>
-                <li>Released to the Android Marketplace</li>
-            </ul>
-        </div>
-        <div class="item">
-            <section id="Wall Master">
-                <h3 class="company">
-                    Wall Master
-                    <div class="work_date">
-                        <span class="endDate">
-                            August 2008
-                        </span>
-                    </div>
-                </h3>
-            </section>
-
-            <div class="work_website">
-                <a href="http://wallmaster.codeplex.com/">http://wallmaster.codeplex.com/</a>
-            </div>
-
-            <div class="work_position">
-                Manages and sets desktop wallpapers
-            </div>
-
-
-            <ul class="highlights">
-                <li>Wrote a WPF tray application to independently set wallpapers when using multiple monitors</li>
-                <li>Accesses the Windows API with P/Invoke</li>
-                <li>Resizes and repositions image dynamically when resolution changes</li>
-            </ul>
-        </div>
+        }
     </section>
+}
