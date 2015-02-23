@@ -195,6 +195,7 @@
     <Compile Include="Models\Award.cs" />
     <Compile Include="Models\Basics.cs" />
     <Compile Include="Models\Education.cs" />
+    <Compile Include="Models\IHasDateSpan.cs" />
     <Compile Include="Models\Interest.cs" />
     <Compile Include="Models\ResumeLanguage.cs" />
     <Compile Include="Models\Location.cs" />
@@ -253,6 +254,7 @@
     <Content Include="Views\Shared\_References.cshtml" />
     <Content Include="Views\Shared\_Education.cshtml" />
     <Content Include="Views\Shared\_Highlights.cshtml" />
+    <Content Include="Views\Shared\_DateSpan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -14,25 +14,7 @@
                         <h3 class="work_name">
                             @item.Company
                             <div class="work_date">
-                                @if (item.StartDate.HasValue)
-                                {
-
-                                    <span class="startDate">
-                                        @item.StartDate.Value.ToString("Y") -
-                                    </span>
-                                }
-                                @if (item.EndDate.HasValue)
-                                {
-                                    <span class="endDate">
-                                        @item.EndDate.Value.ToString("Y")
-                                    </span>
-                                }
-                                else
-                                {
-                                    <span class="endDate">
-                                        Present
-                                    </span>
-                                }
+                                @Html.Partial("_DateSpan", (ResumeMvc.Models.IHasDateSpan)item)
                             </div>
                         </h3>
                     </section>

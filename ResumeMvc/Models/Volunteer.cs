@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace ResumeMvc.Models
 {
-    public class Volunteer
+    public class Volunteer : IHasDateSpan
     {
-        public DateTime EndDate { get; set; }
+        public DateTime? EndDate { get; set; }
 
         public List<string> Highlights { get; set; }
 
@@ -13,7 +13,7 @@ namespace ResumeMvc.Models
 
         public string Position { get; set; }
 
-        public DateTime StartDate { get; set; }
+        public DateTime? StartDate { get; set; }
 
         public string Summary { get; set; }
 

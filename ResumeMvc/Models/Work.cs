@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ResumeMvc.Models
 {
-    public class Work
+    public class Work : IHasDateSpan
     {
         public string Company { get; set; }
 
