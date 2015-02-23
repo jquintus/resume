@@ -5,7 +5,7 @@
     <ul class="highlights">
         @foreach (var item in Model)
         {
-            <li>@item</li>
+            <li>@Html.Raw(item)</li>
         }
     </ul>
 }
