@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ResumeMvc.Models.Interest>
+
+    Interests
+
+    @*{{#if resume.interests.length}}
+        <section id="interests">
+            <h2 class="underlined">Interests</h2>
+            {{#each resume.interests}}
+            <div class="item">
+                {{#if name}}
+                <div class="name">
+                    <strong> {{name}} </strong>
+                </div>
+                {{/if}}
+                {{#if keywords.length}}
+                <ul class="keywords">
+                    {{#each keywords}}
+                    <li>{{{.}}}</li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </div>
+            {{/each}}
+        </section>
+        {{/if}}*@
+

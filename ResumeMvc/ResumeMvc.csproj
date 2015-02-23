@@ -245,6 +245,13 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_Basics.cshtml" />
+    <Content Include="Views\Shared\_Work.cshtml" />
+    <Content Include="Views\Shared\_Volunteer.cshtml" />
+    <Content Include="Views\Shared\_Skills.cshtml" />
+    <Content Include="Views\Shared\_Languages.cshtml" />
+    <Content Include="Views\Shared\_Interests.cshtml" />
+    <Content Include="Views\Shared\_References.cshtml" />
+    <Content Include="Views\Shared\_Education.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
