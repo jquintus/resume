@@ -13,8 +13,6 @@ namespace ResumeMvc.Controllers
             ViewBag.Xyz = "hello";
 
             var model = await ReadResume();
-            //var model = new Resume();
-            //var model = new List<string> { "one", "two" };
 
             return View(model);
         }
