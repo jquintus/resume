@@ -1,6 +1,10 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: #F9F9F9;
+    font-size: 0.9em;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 100px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -9,16 +13,210 @@
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+em {
+  color: #444;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+p {
+  line-height: 1.4;
 }
+
+a {
+  color: #31A6D6;
+}
+
+a:visited {
+  color: #3061A5;
+}
+
+a:hover {
+  color: #3061A5;
+}
+
+ul {
+  margin-bottom: 0;
+}
+section {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+/* End general, overall styling */
+
+/* Header name styling */
+
+#header {
+  background: #009DDC;
+  height: 150px;
+  padding: 15px;
+}
+#header-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.header-title{ 
+  margin: 0px; 
+  padding: 0px; 
+  float: right; 
+}
+.avatar{ 
+  float: left; 
+}
+
+
+@media print{
+  #header {
+    background: #009DDC;
+    height: 50px;
+  }
+
+  .photo{
+    display: none;
+    float: left;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+
+#header-title {
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+#header-subtitle {
+  color: #F3F3F3;
+  font-size: 1em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header .name{
+  float: right;
+  padding-top: 70px;
+}
+.photo{
+  float: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* End header name styling */
+
+/* Set width of main body of CV */
+.container {
+  max-width: 700px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+/* End */
+
+/* Styling Basics (Name, Contact, About, Profiles) */
+
+
+
+.website,
+.email,
+.phone {
+  margin-bottom: 10px;
+  float: left;
+  width: 50%;
+}
+
+.summary {
+  padding-top: 5px;
+  clear: both;
+}
+
+#profiles {
+  overflow: hidden;
+  margin: 0px;
+}
+@media print{
+  #profiles {
+    display: none;
+  }
+}
+
+#profiles .item {
+  float: left;
+  text-align:center;
+  width: 25%;
+  margin:5px 0px;
+  min-width:150px;
+}
+
+/* End 'Basics' Styling */
+
+/* Work and volunteering experience styling */
+
+.institution,
+.qualification {
+  float: left;
+}
+
+.work_date,
+.study_date,
+.work_website{
+  float: right;
+}
+
+.work_position,
+.study_area{
+  font-style: italic;
+  color: #444;
+}
+
+.courses {
+  clear: both;
+}
+
+.dissertation {
+  margin-top: 10px;
+}
+
+.underlined{
+  border-bottom: 1px #E2E2E2 solid;
+}
+
+.skill {
+  margin:10px 5%;
+  float:left;
+  width:40%;
+  min-width:100px;
+}
+
+.item {
+  margin: 25px 0;
+}
+
+/* End work and volunteering */
+
+/* Skills, languages, interests and references styling */
+
+#skills {
+  overflow: hidden;
+}
+
+#languages .item,
+#interests .item,
+#skills .item {
+  float: left;
+  width: 50%;
+}
+
+#references,
+#interests {
+  clear: both;
+}
+
+h3{font-size:1.17em;margin:0em 0}
+
+/* End styling */

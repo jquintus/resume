@@ -1,87 +1,87 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model ResumeMvc.Models.Resume
+
+@{
+    ViewBag.Title = @Model.Basics.Name + " " + @Model.Basics.Label;
 }
+@{var Basics = @Model.Basics;}
 
-@model ResumeMvc.Models.Resume
-
-
-<h1>
-
-@Model.Basics.Name
-</h1>
 
 <div id="header">
     <div id="header-content">
         <div class="photo">
-            <img class="avatar" src="https://raw.githubusercontent.com/jquintus/resume/master/assets/avatar.jpg" alt="avatar" style="width:150px;height:150px" />
+            <img class="avatar" src="@Basics.Picture" alt="avatar" style="width:150px;height:150px" />
         </div>
         <div class="header-title">
-            <h1 id="header-title">Josh Quintus</h1>
-            <h2 id="header-subtitle">Senior Software Engineer</h2>
+            <h1 id="header-title">@Basics.Name</h1>
+            <h2 id="header-subtitle">@Basics.Label</h2>
         </div>
     </div>
 </div>
+
 
 <div id="content" class="container">
     <section id="basics">
         <div class="contact">
             <h2 class="underlined">Summary</h2>
-            <div class="email">
-                <strong>Email:</strong>
-                josh.quintus@gmail.com
-            </div>
-            <div class="phone">
-                <strong>Phone:</strong>
-                (617) 688-7886
-            </div>
+            @if (!string.IsNullOrWhiteSpace(Basics.Email))
+            {
+                <div class="email">
+                    <strong>Email:</strong> @Basics.Email
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(Basics.Phone))
+            {
+                <div class="phone">
+                    <strong>Phone:</strong> @Basics.Phone
+                </div>
+            }
         </div>
-        <div class="summary">
-            <h3>About</h3>
-            <p>Josh is a software engineer with 8 years of experience delivering progressively challenging data-driven projects with various Microsoft technologies</p>
-        </div>
-        <section id="profiles">
-            <div class="item">
-                <strong class="network">
-                    Blog
-                </strong>
-                <div class="url">
-                    <a href="http://blog.MasterDevs.com">
-                        blog.MasterDevs.com
-                    </a>
-                </div>
+        @if (!string.IsNullOrWhiteSpace(Basics.Summary))
+        {
+
+            <div class="summary">
+                <h3>About</h3>
+                <p>@Basics.Summary</p>
             </div>
-            <div class="item">
-                <strong class="network">
-                    GitHub
-                </strong>
-                <div class="url">
-                    <a href="https://github.com/jquintus">
-                        jquintus
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <strong class="network">
-                    StackOverflow
-                </strong>
-                <div class="url">
-                    <a href="http://stackoverflow.com/users/1480854/josh">
-                        Josh
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <strong class="network">
-                    Twitter
-                </strong>
-                <div class="url">
-                    <a href="https://twitter.com/jquintus">
-                        jquintus
-                    </a>
-                </div>
-            </div>
-        </section>
+        }
+
+        @if (Basics.Profiles != null && Basics.Profiles.Any())
+        {
+            <section id="profiles">
+
+                @foreach (var profile in Basics.Profiles)
+                {
+                    <div class="item">
+                        @if (!string.IsNullOrWhiteSpace(profile.Network))
+                        {
+                            <strong>@profile.Network</strong>
+                        }
+
+                        @if (!string.IsNullOrWhiteSpace(profile.Url))
+                        {
+                            <a href="@profile.Url">
+                                @if (!string.IsNullOrWhiteSpace(@profile.Username))
+                                {
+                                    @profile.Username
+                                }
+                                else
+                                {
+                                    @profile.Url
+                                }
+                            </a>
+                        }
+
+                    </div>
+                }
+
+            </section>
+        }
+
     </section>
+
+
+  
+    <!--
 
     <section id="work">
         <h2 class="underlined">Work</h2>
@@ -503,7 +503,7 @@
         })
     </script>
 
-
+            -->
 
 
 </div>
