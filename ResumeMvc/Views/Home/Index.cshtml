@@ -4,6 +4,8 @@
     ViewBag.Title = @Model.Basics.Name + " " + @Model.Basics.Label;
 }
 
+
+
 <div id="header">
     <div id="header-content">
         <div class="photo">
@@ -16,7 +18,7 @@
     </div>
 </div>
 
-<div id="content" class="container">
+<div id="content" class="resume-container">
     @{
         if (@Model.Basics != null) { @Html.Partial("_Basics", @Model.Basics); }
         if (@Model.Work != null) { @Html.Partial("_Work", @Model.Work); }

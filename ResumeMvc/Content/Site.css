@@ -1,20 +1,14 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
     background: #F9F9F9;
     font-size: 0.9em;
     font-family: 'Lato', sans-serif;
     margin-bottom: 100px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-em {
-    color: #444;
+.resume-container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
@@ -38,11 +32,6 @@ ul {
 }
 
 section {
-    margin-bottom: 1em;
-}
-
-blockquote {
-    margin: 0;
     margin-bottom: 1em;
 }
 
@@ -98,11 +87,6 @@ blockquote {
     margin: 0 auto;
 }
 
-header .name {
-    float: right;
-    padding-top: 70px;
-}
-
 .photo {
     float: left;
     width: 150px;
@@ -113,17 +97,7 @@ header .name {
 
 /* End header name styling */
 
-/* Set width of main body of CV */
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* End */
-
 /* Styling Basics (Name, Contact, About, Profiles) */
-
-
 
 .website,
 .email,
@@ -161,11 +135,6 @@ header .name {
 
 /* Work and volunteering experience styling */
 
-.institution,
-.qualification {
-    float: left;
-}
-
 .work_date,
 .study_date,
 .work_website {
@@ -178,17 +147,10 @@ header .name {
     color: #444;
 }
 
-.courses {
-    clear: both;
-}
-
-.dissertation {
-    margin-top: 10px;
-}
-
 .underlined {
     border-bottom: 1px #E2E2E2 solid;
 }
+
 
 .skill {
     margin: 10px 5%;
@@ -209,21 +171,17 @@ header .name {
     overflow: hidden;
 }
 
-    #languages .item,
-    #interests .item,
-    #skills .item {
-        float: left;
-        width: 50%;
-    }
-
-#references,
-#interests {
-    clear: both;
-}
-
 h3 {
     font-size: 1.17em;
     margin: 0 0;
 }
 
-/* End styling */
+
+hr.footer {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #E2E2E2;
+    margin: 1em 0;
+    padding: 0;
+}
