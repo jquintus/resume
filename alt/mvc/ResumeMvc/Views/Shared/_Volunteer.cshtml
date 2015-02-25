@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ResumeMvc.Models.Volunteer>
+@if (Model != null && Model.Any())
+{
+    <section id="projects">
+        <h2 class="underlined">Projects</h2>
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                @if (!string.IsNullOrWhiteSpace(item.Organization))
+                {
+                    <section id="@item.Organization">
+                        <h3 class="work_name">
+                            @item.Organization
+                            <div class="work_date">
+                                @Html.Partial("_DateSpan", (ResumeMvc.Models.IHasDateSpan)item)
+                            </div>
+                        </h3>
+                    </section>
+                }
+
+                @if (!string.IsNullOrWhiteSpace(item.Website))
+                {
+                    <div class="work_website">
+                        <a href="@item.Website">@item.Website</a>
+                    </div>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Position))
+                {
+                    <div class="work_position">
+                        @item.Position
+                    </div>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Summary))
+                {
+                    <div class="summary">
+                        <p>@item.Summary</p>
+                    </div>
+                }
+                @if (item.Highlights != null)
+                {
+                    @Html.Partial("_Highlights", item.Highlights);
+                }
+            </div>
+        }
+    </section>
+}

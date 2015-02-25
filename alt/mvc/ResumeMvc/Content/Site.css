@@ -1,0 +1,187 @@
+﻿body {
+    background: #F9F9F9;
+    font-size: 0.9em;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 100px;
+}
+
+.resume-container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    color: #31A6D6;
+}
+
+    a:visited {
+        color: #3061A5;
+    }
+
+    a:hover {
+        color: #3061A5;
+    }
+
+ul {
+    margin-bottom: 0;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+/* End general, overall styling */
+
+/* Header name styling */
+
+#header {
+    background: #009DDC;
+    height: 150px;
+    padding: 15px;
+}
+
+#header-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header-title {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.avatar {
+    float: left;
+}
+
+@media print {
+    #header {
+        background: #009DDC;
+        height: 50px;
+    }
+
+    .photo {
+        display: none;
+        float: left;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+}
+
+#header-title {
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+#header-subtitle {
+    color: #F3F3F3;
+    font-size: 1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.photo {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* End header name styling */
+
+/* Styling Basics (Name, Contact, About, Profiles) */
+
+.website,
+.email,
+.phone {
+    margin-bottom: 10px;
+    float: left;
+    width: 50%;
+}
+
+.summary {
+    padding-top: 5px;
+    clear: both;
+}
+
+#profiles {
+    overflow: hidden;
+    margin: 0;
+}
+
+@media print {
+    #profiles {
+        display: none;
+    }
+}
+
+#profiles .item {
+    float: left;
+    text-align: center;
+    width: 25%;
+    margin: 5px 0;
+    min-width: 150px;
+}
+
+/* End 'Basics' Styling */
+
+/* Work and volunteering experience styling */
+
+.work_date,
+.study_date,
+.work_website {
+    float: right;
+}
+
+.work_position,
+.study_area {
+    font-style: italic;
+    color: #444;
+}
+
+.underlined {
+    border-bottom: 1px #E2E2E2 solid;
+}
+
+
+.skill {
+    margin: 10px 5%;
+    float: left;
+    width: 40%;
+    min-width: 100px;
+}
+
+.item {
+    margin: 25px 0;
+}
+
+/* End work and volunteering */
+
+/* Skills, languages, interests and references styling */
+
+#skills {
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 0 0;
+}
+
+
+hr.footer {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #E2E2E2;
+    margin: 1em 0;
+    padding: 0;
+}

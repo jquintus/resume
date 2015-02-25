@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ResumeMvc.Models.Education>
+@if (Model != null && Model.Any())
+{
+    <section id="education">
+        <h2 class="underlined">Education and Training</h2>
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                @if (!string.IsNullOrWhiteSpace(item.Institution))
+                {
+                    <section id="@item.Institution">
+                        <div class="study_name">
+                            <h3>
+                                @item.Institution
+                                <div class="study_date">
+                                    @Html.Partial("_DateSpan", (ResumeMvc.Models.IHasDateSpan)item)
+                                </div>
+                            </h3>
+                        </div>
+                    </section>
+                }
+
+                @if (!string.IsNullOrWhiteSpace(item.Area))
+                {
+
+                    <div class="study_area">
+                        @item.Area
+                    </div>
+                }
+
+                @if (item.Courses != null && item.Courses.Any())
+                {
+                    <p>
+                        @if (!string.IsNullOrWhiteSpace(item.StudyType))
+                        {
+                            <strong> @item.StudyType: </strong>
+                        }
+                        else
+                        {
+                            <strong> Courses: </strong>
+                        }
+
+                        @(string.Join(", ", item.Courses))
+                    </p>
+                }
+            </div>
+        }
+    </section>
+
+}

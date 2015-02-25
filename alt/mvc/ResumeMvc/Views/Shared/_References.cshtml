@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ResumeMvc.Models.ResumeReference>
+@if (Model != null && Model.Any())
+{
+    <section id="references">
+        <h2 class="underlined">References</h2>
+        @foreach (var item in Model)
+        {
+
+            <div class="item">
+
+                @if (string.IsNullOrWhiteSpace(item.Reference))
+                {
+                    <blockquote class="reference">
+                        @item.Reference
+                    </blockquote>
+                }
+
+                @if (string.IsNullOrWhiteSpace(item.Name))
+                {
+                    <div class="name">
+                        @item.Name
+                    </div>
+                }
+            </div>
+        }
+    </section>
+}

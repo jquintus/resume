@@ -1,0 +1,25 @@
+﻿@model ResumeMvc.Models.IHasDateSpan
+
+@if (Model != null && (Model.StartDate.HasValue || Model.EndDate.HasValue))
+{
+
+    if (Model.StartDate.HasValue)
+    {
+
+        <span class="startDate">
+            @Model.StartDate.Value.ToString("Y") -
+        </span>
+    }
+    if (Model.EndDate.HasValue)
+    {
+        <span class="endDate">
+            @Model.EndDate.Value.ToString("Y")
+        </span>
+    }
+    else
+    {
+        <span class="endDate">
+            Present
+        </span>
+    }
+}

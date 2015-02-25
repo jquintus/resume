@@ -1,0 +1,253 @@
+{
+  "basics":{
+    "name":"Josh Quintus",
+    "label":"Senior Software Engineer",
+    "picture":"https://raw.githubusercontent.com/jquintus/resume/master/assets/avatar.jpg",
+    "email":"josh.quintus@gmail.com",
+    "phone":"(617) 688-7886",
+    "summary":"Josh is a software engineer with 8 years of experience delivering progressively challenging data-driven projects with various Microsoft technologies",
+    "location":{
+      "address":"60-72 70th Ave",
+      "postalCode":"11385",
+      "city":"Ridgewood",
+      "countryCode":"US",
+      "region":"New York"
+    },
+    "profiles":[
+      {
+        "network":"Blog",
+        "username":"blog.MasterDevs.com",
+        "url":"http://blog.MasterDevs.com"
+      },
+      {
+        "network":"GitHub",
+        "username":"jquintus",
+        "url":"https://github.com/jquintus"
+      },
+      {
+        "network":"StackOverflow",
+        "username":"Josh",
+        "url":"http://stackoverflow.com/users/1480854/josh"
+      },
+      {
+        "network":"Twitter",
+        "username":"@jquintus",
+        "url":"https://twitter.com/jquintus"
+      }
+    ]
+  },
+  "work":[
+    {
+      "company":"Yarly, Co.",
+      "position":"Founding Developer",
+      "website":"http://yarly.co",
+      "startDate":"2013-06-01",
+      "summary":"As one of three developers, I have a hand in every technical decision made for this young startup",
+      "highlights":[
+        "Created and maintain Yarly's 5 star <a href='https://play.google.com/store/apps/details?id=co.yarly.droid'>Android app </a> in C# sharing 80% of code with iOS and WinPhone versions",
+        "Set up all DevOps aspects of the technology stack including Git repository on TFS, CI builds, Azure hosting, continuous and scheduled jobs, and reporting",
+        "Led the effort to migrate all our data from MongoDB to Sql Azure"
+      ]
+    },
+    {
+      "company":"Goldman Sachs",
+      "position":"Software Engineer for GSAM",
+      "website":"http://assetmanagement.gs.com",
+      "startDate":"2011-05-01",
+      "endDate":"2014-01-31",
+      "summary":" ",
+      "highlights":[
+        "As a leader in coding practices my advice was sought out formally and informally at all stages of development, from early design to code review. ",
+        "I became a touch point for the entire software development lifecycle.",
+        "Headed task forces to deep dive into impactful production bugs and produced temporary workarounds while investigating elusive root cause",
+        "Brought in to rescue floundering projects",
+        "Worked across teams to facilitate dialog and gather thoughts about what the future of the system means to different businesses so that we can clearly shape the architecture moving forward",
+        "Worked with multiple satellite tech teams to create a common trading system for business specific use cases and workflows"
+      ]
+    },
+    {
+      "company":"FactSet Research Systems Inc.",
+      "position":"Senior Software Engineer",
+      "website":"http://factset.com",
+      "startDate":"2008-07-07",
+      "endDate":"2011-06-02",
+      "summary":" ",
+      "highlights":[
+        "Developed Scheduler program, integrating GNU linear algebra libraries to create an optimized schedule for various tasks",
+        "Lead software engineering efforts for a multi-tiered solution to record upcoming earnings calls utilizing WPF for the presentation layer, SQL Server for the data layer, and WCF hosted in a Windows Service",
+        "Maintained and supported existing infrastructure, ensuring that stakeholders would always be able to produce a professional product in a timely manner",
+        "Instituted a weekly code review which helped improve the quality of the code base as well as promote an atmosphere of sharing new and interesting coding practices",
+        "Streamlined data-verification process, removing thousands of false negatives so that our operations team could concentrate on the handful of actual problems",
+        "Gathered and interpreted requirements from stakeholders",
+        "Supported CallStreet's near-real time data feed by designing and implementing enhancements, fixing bugs, and responding to and helping clients when issues arise"
+      ]
+    },
+    {
+      "company":"Enterprise Air",
+      "position":"Senior Software Engineer",
+      "startDate":"2006-07-17",
+      "endDate":"2008-07-03",
+      "summary":" ",
+      "highlights":[
+        "Managed, designed, and developed an application to configure, test, and determine the overall health of a distributed system in real time",
+        "Maintained and added features to command and control software communicating with multiple end points through WMI and Microsoft Message Queues",
+        "Designed and implemented a distributed software package which routes user data to subscribed ID management and physical access control systems",
+        "Communicated with the QA/Tech Support team to turn client requirements into solid feature requests for various projects and to help understand clients' needs",
+        "Supervised in creation of multiple levels of documentation across projects, including user guides, developer documentation, and architecture overviews",
+        "Created intuitive UI layouts with a focus on ease of deployment and maintenance by clients"
+      ]
+    },
+    {
+      "company":"Enpocket, Inc.",
+      "position":"Field Engineer / Assistant IT Support Specialist",
+      "startDate":"2005-05-01",
+      "endDate":"2006-05-30",
+      "summary":" ",
+      "highlights":[
+        "Created and deployed mobile web services",
+        "Administrated systems and networks in a mostly Fedora Core 3 production environment",
+        "Installed and maintained an in-office VoIP Asterisk PBX",
+        "Laid down telephone and CATV office cabling"
+      ]
+    }
+  ],
+  "education":[
+    {
+      "institution":"Develomentor",
+      "area":"Training:  Exploring .NET 4.0",
+      "studyType": "Topics",
+      "endDate":"2010-07-25",
+      "courses":[
+        "LINQ",
+        "WPF",
+        "WCF",
+        "Threading",
+        "Concurrency",
+        "Parallel Programming",
+        "Silverlight"
+      ]
+    },
+    {
+      "institution":"Northeastern University",
+      "area":"Bachelor of Science in Computer Science, Minor in Mathematics",
+      "studyType":"Courses",
+      "startDate":"2001-09-21",
+      "endDate":"2006-05-20",
+      "courses":[
+        "Cryptography",
+        "Compilers",
+        "Programming Languages",
+        "Computer Organization and Design",
+        "Topics in OS",
+        "Software Design",
+        "Computer Networking",
+        "Macroeconomics",
+        "Calculus",
+        "Differential Equations in Linear Algebra",
+        "Number Theory"
+      ]
+    }
+  ],
+  "volunteer":[
+    {
+      "organization":"VsOpenIn",
+      "website":"https://github.com/jquintus/VsOpenIn/",
+      "position":"Visual Studio extension to open the current document in an external editor",
+      "endDate":"2015-02-17",
+      "highlights":[
+        "Released to the Visual Studio Extension Gallery",
+        "Open with Vim by default, but can be configured to use any editor"
+      ]
+    },
+    {
+      "organization":"Xamarin Forms Shopping Cart",
+      "website":"https://github.com/jquintus/ShoppingCartXF",
+      "position": "Sample code and detailed articles detailing pitfalls of Xamarin Forms",
+      "endDate":"2014-10-01",
+      "highlights":[
+        "Featured in the <a href='http://XamarinWeekly.com'>Xamarin Weekly Newsletter</a>",
+        "Provids insight and best practices for an emerging technology",
+        "Discusses options for consistently styling cross-platform applications",
+        "Highlights bugs and the necessary workarounds when using Xamarin Forms"
+      ]
+    },
+    {
+      "organization":"Message Master",
+      "website":"http://messagemaster.codeplex.com/",
+      "endDate":"2009-12-01",
+      "highlights":[
+        "Created an Android application to send canned text messages",
+        "Released to the Android Marketplace"
+      ]
+    },
+    {
+      "organization":"Wall Master",
+      "website":"http://wallmaster.codeplex.com/",
+      "position": "Manages and sets desktop wallpapers",
+      "endDate":"2008-08-01",
+      "highlights":[
+        "Wrote a WPF tray application to independently set wallpapers when using multiple monitors",
+        "Accesses the Windows API with P/Invoke",
+        "Resizes and repositions image dynamically when resolution changes"
+      ]
+    }
+  ],
+  "skills":[
+    {
+      "name":"Core Competencies",
+      "keywords":[
+        ".NET/Visual Studio",
+        "Xamarin Android",
+        "Windows Azure",
+        "Windows Services",
+        "Debugging",
+        "Software Design"
+      ]
+    },
+    { "name":"Android Development",
+      "keywords":[
+        "Xamarin",
+        "MvvmCross",
+        "Xamarin Forms"
+        ]
+    },
+    {
+      "name":"Languages",
+      "keywords":[
+        "C#",
+        "SQL",
+        "JSON",
+        "XML",
+        "XSLT",
+        "Perl"
+      ]
+    },
+    {
+      "name":"Development Tools",
+      "keywords":[
+        "Visual Studio 2003 - 2013",
+        "SQL Management Studio 2008",
+        "Moq",
+        "Ninject",
+        "NUnit",
+        "Perforce",
+        "Git",
+        "Vim"
+      ]
+    },
+    {
+      "name":"Technologies",
+      "keywords":[
+        ".NET 4.0",
+        "Web Services (WCF)",
+        "WPF",
+        "Windows Services",
+        "Regular Expressions",
+        "MS Message Queues",
+        "WMI"
+      ]
+    }
+  ]
+}
+
+

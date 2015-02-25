@@ -1,0 +1,62 @@
+﻿@model ResumeMvc.Models.Basics
+
+@{var Basics = Model;}
+
+<section id="basics">
+    <div class="contact">
+        <h2 class="underlined">Summary</h2>
+        @if (!string.IsNullOrWhiteSpace(Basics.Email))
+        {
+            <div class="email">
+                <strong>Email:</strong> @Basics.Email
+            </div>
+        }
+        @if (!string.IsNullOrWhiteSpace(Basics.Phone))
+        {
+            <div class="phone">
+                <strong>Phone:</strong> @Basics.Phone
+            </div>
+        }
+    </div>
+    @if (!string.IsNullOrWhiteSpace(Basics.Summary))
+    {
+
+        <div class="summary">
+            <h3>About</h3>
+            <p>@Basics.Summary</p>
+        </div>
+    }
+
+    @if (Basics.Profiles != null && Basics.Profiles.Any())
+    {
+        <section id="profiles">
+
+            @foreach (var profile in Basics.Profiles)
+            {
+                <div class="item">
+                    @if (!string.IsNullOrWhiteSpace(profile.Network))
+                    {
+                        <strong>@profile.Network</strong>
+                    }
+
+                    @if (!string.IsNullOrWhiteSpace(profile.Url))
+                    {
+                        <a href="@profile.Url">
+                            @if (!string.IsNullOrWhiteSpace(@profile.Username))
+                            {
+                                @profile.Username
+                            }
+                            else
+                            {
+                                @profile.Url
+                            }
+                        </a>
+                    }
+
+                </div>
+            }
+
+        </section>
+    }
+
+</section>

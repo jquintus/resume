@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ResumeMvc.Models.ResumeLanguage>
+
+@if (Model != null && Model.Any())
+{
+    <section id="languages">
+        <h2 class="underlined">Languages</h2>
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                @if (!string.IsNullOrWhiteSpace(item.Language))
+                {
+                    <div class="language">
+                        @item.Language
+                    </div>
+                }
+                @if (!string.IsNullOrWhiteSpace(item.Fluency))
+                {
+                    <div class="level">
+                        <em>item.Fluency</em>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+}

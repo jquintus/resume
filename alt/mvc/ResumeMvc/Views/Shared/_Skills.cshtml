@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ResumeMvc.Models.Skill>
+@if (Model != null && Model.Any())
+{
+    @Scripts.Render("~/bundles/jquery")
+
+    <section id="skills">
+        <h2 class="underlined">Skills</h2>
+
+        @foreach (var item in Model)
+        {
+
+            <div class="skill">
+                @if (!string.IsNullOrWhiteSpace(item.Name))
+                {
+                    <div class="name">
+                        <strong> @item.Name </strong>
+                    </div>
+                }
+
+                @if (!string.IsNullOrWhiteSpace(item.Level))
+                {
+
+                    <div class="level">
+                        <em>@item.Level</em>
+                    </div>
+                }
+
+                @if (item.Keywords != null && item.Keywords.Any())
+                {
+                    <ul class="keywords">
+                        @foreach (var keyword in item.Keywords)
+                        {
+                            <li>@keyword</li>
+                        }
+                    </ul>
+                }
+            </div>
+
+        }
+    </section>
+
+
+    <script>
+        var highestBox = 0;
+        $('.skill').each(function () {
+
+            if ($(this).height() > highestBox)
+                highestBox = $(this).height();
+        })
+
+        $('.skill').each(function () {
+            $(this).height(highestBox);
+        })
+    </script>
+
+}

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ResumeMvc.Models.Interest>
+
+@if (Model != null && Model.Any())
+{
+    <section id="interests">
+        <h2 class="underlined">Interests</h2>
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                @if (!string.IsNullOrWhiteSpace(item.Name))
+                {
+                    <div class="name">
+                        <strong> @item.Name </strong>
+                    </div>
+                }
+
+                @if (item.Keywords != null && item.Keywords.Any())
+                {
+                    <ul class="keywords">
+                        @foreach (var keyword in item.Keywords)
+                        {
+                            <li>@keyword</li>
+                        }
+                    </ul>
+                }
+            </div>
+        }
+    </section>
+}

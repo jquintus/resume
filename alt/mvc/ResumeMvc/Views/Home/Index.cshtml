@@ -1,0 +1,32 @@
+﻿@model ResumeMvc.Models.Resume
+
+@{
+    ViewBag.Title = @Model.Basics.Name + " " + @Model.Basics.Label;
+}
+
+
+
+<div id="header">
+    <div id="header-content">
+        <div class="photo">
+            <img class="avatar" src="@Model.Basics.Picture" alt="avatar" style="width:150px;height:150px" />
+        </div>
+        <div class="header-title">
+            <h1 id="header-title">@Model.Basics.Name</h1>
+            <h2 id="header-subtitle">@Model.Basics.Label</h2>
+        </div>
+    </div>
+</div>
+
+<div id="content" class="resume-container">
+    @{
+        if (@Model.Basics != null) { @Html.Partial("_Basics", @Model.Basics); }
+        if (@Model.Work != null) { @Html.Partial("_Work", @Model.Work); }
+        if (@Model.Volunteer != null) { @Html.Partial("_Volunteer", @Model.Volunteer); }
+        if (@Model.Education != null) { @Html.Partial("_Education", @Model.Education); }
+        if (@Model.Skills != null) { @Html.Partial("_Skills", @Model.Skills); }
+        if (@Model.Languages != null) { @Html.Partial("_Languages", @Model.Languages); }
+        if (@Model.Interests != null) { @Html.Partial("_Interests", @Model.Interests); }
+        if (@Model.References != null) { @Html.Partial("_References", @Model.References); }
+    }
+</div>
