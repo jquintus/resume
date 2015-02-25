@@ -11,13 +11,13 @@
                     <section id="@item.Company">
                         <h3 class="work_name">
                             @item.Company
-                            <div class="work_date">
-                                @Html.Partial("_DateSpan", (ResumeMvc.Models.IHasDateSpan)item)
-                            </div>
+                            @Html.Partial("_DateSpan", (ResumeMvc.Models.IHasDateSpan)item)
                         </h3>
+                        <div class="work_date">
+                        </div>
                     </section>
                 }
-                
+
                 @if (!string.IsNullOrWhiteSpace(item.Website))
                 {
                     <div class="work_website">
