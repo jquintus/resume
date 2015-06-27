@@ -38,6 +38,18 @@
   },
   "work":[
     {
+      "company":"DotAlign, Inc.",
+      "position":"Principle Developer",
+      "website":"http://DotAlign.com",
+      "startDate":"2015-03-16",
+      "summary":"",
+      "highlights":[
+        "Defined the SDLC process for the team and provided infrastructure and tooling around it in the form of TeamCity as a build system and Jira for task and release management",
+        "Introduced and taught the team to dependency injection containers and how they would improve the quality and maintainability of the product",
+        "Created test environments including automated acceptance tests using SpecFlow",
+      ]
+    },
+    {
       "company":"Yarly, Co.",
       "position":"Founding Developer",
       "website":"http://yarly.co",
@@ -150,6 +162,15 @@
   ],
   "volunteer":[
     {
+      "organization":"CoolWhip",
+      "website":"https://github.com/MasterDevs/CoolWhip/",
+      "position":"The coolest way to whip out NuGet releases from GitHub and AppVeyor",
+      "endDate":"2015-05-17",
+      "highlights":[
+        "NuGet package to add continuous delivery to a NuGet package hosted in GitHub"
+      ]
+    },
+    {
       "organization":"VsOpenIn",
       "website":"https://github.com/jquintus/VsOpenIn/",
       "position":"Visual Studio extension to open the current document in an external editor",
@@ -232,7 +253,9 @@
         "NUnit",
         "Perforce",
         "Git",
-        "Vim"
+        "Vim",
+        "TeamCity 8.x"
+        "SpecFlow",
       ]
     },
     {
