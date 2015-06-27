@@ -46,7 +46,7 @@
       "highlights":[
         "Defined the SDLC process for the team and provided infrastructure and tooling around it in the form of TeamCity as a build system and Jira for task and release management",
         "Introduced and taught the team to dependency injection containers and how they would improve the quality and maintainability of the product",
-        "Created test environments including automated acceptance tests using SpecFlow",
+        "Created test environments including automated acceptance tests using SpecFlow"
       ]
     },
     {
