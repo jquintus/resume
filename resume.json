@@ -254,8 +254,8 @@
         "Perforce",
         "Git",
         "Vim",
-        "TeamCity 8.x"
-        "SpecFlow",
+        "TeamCity 8.x",
+        "SpecFlow"
       ]
     },
     {
