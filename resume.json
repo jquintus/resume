@@ -5,7 +5,7 @@
     "picture":"https://raw.githubusercontent.com/jquintus/resume/master/assets/avatar.jpg",
     "email":"josh.quintus@gmail.com",
     "phone":"(617) 688-7886",
-    "summary":"Josh is a software engineer with 8 years of experience delivering progressively challenging data-driven projects with various Microsoft technologies",
+    "summary": "Josh is a software engineer with 12 years of experience delivering progressively challenging data-driven projects with various Microsoft technologies",
     "location":{
       "address":"60-72 70th Ave",
       "postalCode":"11385",
@@ -16,8 +16,8 @@
     "profiles":[
       {
         "network":"Blog",
-        "username":"blog.MasterDevs.com",
-        "url":"http://blog.MasterDevs.com"
+        "username":"quintussential.com",
+        "url":"http://quintussential.com"
       },
       {
         "network":"GitHub",
@@ -44,9 +44,17 @@
       "startDate":"2015-03-16",
       "summary":"",
       "highlights":[
-        "Defined the SDLC process for the team and provided infrastructure and tooling around it in the form of TeamCity as a build system and Jira for task and release management",
-        "Introduced and taught the team to dependency injection containers and how they would improve the quality and maintainability of the product",
-        "Created test environments including automated acceptance tests using SpecFlow"
+        "Redesigning our SQLite and WPF desktop-based product to become cloud native by moving to Azure Functions, SQL Azure, ASP.NET, and Elm",
+
+        "Lead and manage a team that has tripled in size while evolving project management structure to fit the changing needs of the product and team", 
+
+        "Create an environment conducive to both learning and producing excellent code by implementing code reviews to enforce standards, documenting best practices, and encouraging regular talks on a wide variety of technical topics",
+
+        "Worked with stakeholders to design and implement a user application to automatically gather data, analyze it, and share it with other users using a patented decentralized algorithm",
+
+        "Defined the SDLC process for the team and provided infrastructure and tooling around it using TeamCity as a build system and Jira for task and release management",
+
+        "Introduced and taught the team dependency injection containers and how they would improve the quality and maintainability of the product"
       ]
     },
     {
@@ -54,6 +62,7 @@
       "position":"Founding Developer",
       "website":"http://yarly.co",
       "startDate":"2013-06-01",
+      "endDate":"2015-03-16",
       "summary":"As one of three developers, I have a hand in every technical decision made for this young startup",
       "highlights":[
         "Created and maintain Yarly's 5 star <a href='https://play.google.com/store/apps/details?id=co.yarly.droid'>Android app </a> in C# sharing 80% of code with iOS and WinPhone versions",
@@ -240,20 +249,23 @@
         "JSON",
         "XML",
         "XSLT",
+        "F#",
         "Perl"
       ]
     },
     {
       "name":"Development Tools",
       "keywords":[
-        "Visual Studio 2003 - 2013",
+        "Visual Studio 2003 - 2017",
         "SQL Management Studio 2008",
         "Moq",
         "Ninject",
         "NUnit",
-        "Perforce",
+        "XUnit",
         "Git",
+        "Perforce",
         "Vim",
+        "Cake",
         "TeamCity 8.x",
         "SpecFlow"
       ]
@@ -261,7 +273,8 @@
     {
       "name":"Technologies",
       "keywords":[
-        ".NET 4.0",
+        ".NET",
+        "Azure Functions 2.0",
         "Web Services (WCF)",
         "WPF",
         "Windows Services",
