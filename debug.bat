@@ -1,1 +1,1 @@
-node_modules\.bin\resume serve --theme class2
+node_modules\.bin\resume serve --theme class
